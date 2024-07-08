@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>JS Practice</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <div id="wrapper">
+       <div id="heading" style="text-align:center; margin-top:-100px">
+         <h1>Convert CM to inches</h1>
+       </div>
+       <div id="box">
+          <input id="val" type="text" placeholder="enter value" style="padding:10px;">
+       </div>
+       <div id="button">
+           <button onclick="convert()">Convert</button>
+       </div>
+       <div id="answer">
+          
+       </div>
+     </div>
+    <script>
+        function convert(){
+
+            let value=Number(document.getElementById("val").value);
+            let inch=value/2.54;
+            let answer=document.getElementById("answer");
+            answer.innerHTML=inch.toFixed(2)+" Inches";
+        }
+    </script>
+    </body>
+</html>

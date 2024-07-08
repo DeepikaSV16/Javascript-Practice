@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Display date</title>
+    </head>
+    <body>
+        <h1>Display today's date</h1>
+        <div id="date">
+            <button id="show" onclick="datedisplay()">Show date</button>
+        </div>
+        <div id="val"></div>
+        <h1 id="change">Hello!</h1>
+        <button  onclick="document.getElementById('change').innerHTML=`Hello Deeps`">Tap</button>
+        <script>
+            function datedisplay()
+            {
+                let result=document.getElementById("val");
+                result.innerHTML=Date();
+
+            }
+            </script>
+                
+               <!-- <script>
+                function changetext()
+                {
+                    let text1=document.getElementById("change");
+                    text1.innerHTML="Hello Deeps!";
+                    }
+                </script> -->
+                <h1>Image</h1>
+                <button onclick="document.getElementById('myimage').src=`pic1.jpg`">Picture 1</button>
+                <img id="myimage" src="pic2.jpg" style="width: 100px;">
+                <button onclick="document.getElementById('myimage').src=`pic1.jpg`">Picture 2</button>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+       //function declaration
+       function isEven(num)
+       {
+        return num%2==0
+       } 
+       console.log(isEven(6));
+       //function expression
+       let volume=function(l,b,h){
+        return l*b*h;
+       }
+       console.log(volume(4,5,6));
+
+       //arrow function
+       let product=(a,b) => {return a*b}
+       console.log(product(10,10));
+
+       //recursion
+       function fact(num)
+       {
+        if(num==1)
+        return 1
+         return num*fact(num-1);
+       }
+       console.log(fact(5));
+
+       //
+       let arr=[2,3,4,5,6,7];
+       let sum=(arr) =>
+       {
+        let ans=0;
+        for(let val of arr)
+        {
+            ans+=val;
+        }
+        return ans;
+       }
+       console.log(sum(arr));
+
+       //callback functions function inside a function
+
+       function f1(name){
+        console.log("Hello "+ name);
+       }
+
+       function f2(name){
+            let result=document.querySelector('h1');
+            result.innerHTML='Hello '+ name;
+       }
+
+       function greet(callback)
+       {
+             callback('Deepika');
+       }
+       greet(f1);
+
+       //variable arguments -rest parameters -for multiple values in same times
+
+       let arg=function(...args)
+       {
+        let sum=0;
+        for(let val of args)
+        {
+        sum+=val;
+        }
+        return sum;
+       }
+       console.log(arg(10,20,30,10,10));
+       console.clear();
+        
+       greet(name=>{
+        console.log("Hello "+name);
+       })
+
+        //forEach method in callback
+
+        let a=['Deepika','Visalakchi','Saravanan','Arul'];
+        a.forEach(print)
+         function print(v)
+         {
+           console.log(v.toUpperCase());
+         }
+
+         a.forEach(re=>{
+            console.log(re);
+         })
+    </script>
+</body>
+</html>

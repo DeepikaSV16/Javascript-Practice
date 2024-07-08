@@ -1,0 +1,16 @@
+#btn
+{
+    align-items: center;
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+}
+#wrap{
+    align-items: center;
+    padding:30%;
+    padding-left:40%;
+}
+body{
+    height:100px;
+    width:100%;
+}

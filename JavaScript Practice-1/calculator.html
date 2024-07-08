@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #b{
+        display:block;
+        margin-top:10px;
+       }
+       #value{
+        padding:10px;
+       }
+       #result{
+        padding:20px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input id="value" type="text" placeholder="Enter value">
+    <button id="b" onclick="run()">Calculate</button>
+    <div id="result">
+
+    </div>
+    <script>
+      //let a;
+      let ans=0;
+      function run()
+      {
+        let input=document.getElementById("value").value;
+        //console.log(typeof(input));
+        if(input.includes('+'))
+        {
+           let a=input.split("+");
+           ans=Number(a[0])+Number(a[1]);
+           //console.log(ans);
+        }
+        else if(input.includes('-'))
+        {
+          let a=input.split("-");
+          ans=Number(a[0])-Number(a[1]);
+         // console.log(ans);
+        }
+        else if(input.includes("*"))
+        {
+          let a=input.split("*")
+          ans=Number(a[0])*Number(a[1]);
+           //console.log(ans);
+        }
+        else if(input.includes("/"))
+        {
+          let a=input.split("/");
+          ans=Number(a[0])/Number(a[1]);
+          //console.log(ans);
+        }
+        else 
+        {
+          ans=0;
+        }
+        let res=document.getElementById("result");
+        res.innerHTML=ans;
+      }
+    </script>
+</body>
+</html>

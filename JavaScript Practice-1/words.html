@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:beige;
+            overscroll-behavior: none;
+            display: fixed;
+        }
+       
+         #text{
+              color:beige;
+              text-align:center;
+              margin-top:20%;
+              padding:100px;
+              padding-bottom: 200px;
+              padding-top:50px;
+              background-color:black;
+              display:inline-block;
+              margin-left: 20%;
+         } 
+         #b{
+            margin-left:55px;
+            margin-top:10px;
+         }
+    </style>
+</head>
+<body>
+        <div id="text">
+            <h1>Type a Sentence</h1>
+          <textarea id="content" rows="20" cols="30" style="background-color: aquamarine;">
+          </textarea>
+          <button id="b" onclick="calculate()" style="display: block; padding:10px;">Calculate</button>
+          <div id="res" style="margin-top:10px;">
+
+          </div>
+        </div>
+        <script>
+            let tot;
+            function calculate()
+            {
+                let str=document.getElementById("content").value;
+                str.trim();
+                let ans=str.split(/\s+/);
+                 tot=ans.length-1;
+                let val=document.getElementById("res");
+                val.innerHTML=tot;
+                console.log(ans);
+            } 
+        </script>
+</body>
+</html>

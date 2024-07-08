@@ -1,0 +1,22 @@
+body{
+    background-color:darkcyan;
+}
+#wrapper{
+    background-color:bisque;
+    padding:100px;
+    margin:10%;
+}
+#box{
+    margin:35px;
+    display: flex;
+}
+#button{
+    margin:35px;
+    
+}
+#answer{
+    margin:35px;
+}
+button{
+    background-color: white;
+}

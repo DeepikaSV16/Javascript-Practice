@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Fd rate calculator</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <div id="wrapper">
+       <div id="heading" style="text-align:center; margin-top:-100px">
+         <h1>Fd rate calculator</h1>
+       </div>
+       <div id="box">
+          <input id="val" type="text" placeholder="enter month" style="padding:10px;">
+       </div>
+       <div id="button">
+           <button onclick="fdrate()">Calculate</button>
+       </div>
+       <div id="answer">
+          
+       </div>
+     </div>
+    <script>
+        function fdrate(){
+            let month=document.getElementById("val").value;
+            let rate;
+            if(month<3)
+            {
+            rate=5.8;
+            }
+            else if(month>=3 && month<=6)
+            {
+             rate=6.5;
+            }
+            else if(month>=7 && month<=9)
+            {
+            rate=6.8;
+            }
+            else 
+            {
+            rate=7;
+            }
+            let result=document.querySelector("#answer");
+            result.innerHTML=rate+"%";
+
+        }
+    </script>
+    </body>
+</html>

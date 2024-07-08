@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="branch" style="padding:20px;">
+        <option value="option" >select</option>
+    </select>
+
+    <script>
+        let arr=["eee","ece","cse","IT","aids"];
+      arr.forEach(val=>{
+          let opt=document.createElement('option');
+          opt.textContent=val.toUpperCase();
+          opt.value=val;
+          document.getElementById('branch').appendChild(opt);
+      })
+
+      let price=[98,23,56,45,74];
+      price.forEach(x=>{
+        console.log(x*83);
+      })
+     let ans= price.map(y=>(y*83)
+      )
+      console.log(ans);
+
+     let k=[{name:'Deepika',age:20},
+        {name:'Saravanan',age:45},
+        {name:'Visalakchi',age:45},
+        {name:'Arul',age:18}
+     ];
+     
+     let ages=k.map(z=>z.age);
+     console.log(ages);
+
+     let s=k.filter(l=>l.age<=20)
+     console.log(s);
+
+    let tot=price.reduce((price,el)=>price+el);
+    console.log(tot);
+    </script>
+</body>
+</html>

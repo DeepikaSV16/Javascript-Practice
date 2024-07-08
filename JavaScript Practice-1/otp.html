@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Generate_OTP</title>
+      <style>
+        #otp{
+            margin-top:10px;
+        }
+      </style>
+    </head>
+    <body>
+       <div>
+        <h1>Generate OTP</h1>
+        <div>
+            <button id="b" onclick="generate()">generate</button>
+        </div>
+        <div id="otp">
+
+        </div>
+       </div>
+       <script>
+        let min=1000;
+        let max=9999;
+         function generate()
+         {
+            let otp=(Math.random()*(max-min))+min;
+            let result=document.getElementById("otp");
+            result.innerHTML=Math.floor(otp);
+         }
+       </script>
+    </body>
+</html>

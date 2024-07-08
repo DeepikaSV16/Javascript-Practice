@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Farenhiet-Converter</title>
+     <style>
+        button{
+            margin-top:10px;
+        }
+        #result{
+            margin-top:10px;
+        }
+     </style>
+    </head>
+    <body>
+      <div>
+        <h1>Celcius To Farenhiet</h1>
+        <div>
+            <input id="value" type="text" placeholder="Enter celcius value">
+        </div>
+        <div>
+            <button id="b" onclick="convert()" >Convert</button>
+        </div>
+        <div id="result">
+
+        </div>
+      </div>
+      <script>
+        function convert()
+        {
+            let value=Number(document.getElementById("value").value);
+            let f=value*(9/5)+32;
+            let answer=document.getElementById("result");
+            answer.innerHTML=f;
+        }
+      </script>
+    </body>
+</html>

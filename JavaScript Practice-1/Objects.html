@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            let user={
+                username:'Deepika',
+                userage:20,
+                useremail:'deepikasaravananv@gmail.com',
+                usercity:'Coimbatore',
+                 a:[1,2,3,4,5,6],
+
+            }
+            console.log(user['username']);
+            user.usercountry='India';
+            console.log(user);
+            let user1=new Object();
+            user1.mail='dee123345@gmail.com';
+            user1.no=9629841911;
+            user1.city='Coimbatore';
+            console.log(user1);
+            user1.age=20;
+            console.log(user1);
+            console.log(user1['city']);
+            console.log(user.a[1]);
+
+            //for loop
+            // let i;
+            // for(i=1;i<=5;i++)
+            // {
+            //     console.log(i);
+            // }
+            // //while loop
+            // let j=0;
+            // while(j<5)
+            // {
+            //     console.log(j);
+            //     j++;
+            // }
+            // //do while loop
+            // let d=1;
+            // do{
+            //     console.log(d);
+            //     d++;
+            //     break;
+            // }while(d<=5)
+             //continue 
+             let k;
+             for(k=1;k<=10;k++)
+             {
+                if(k%2==0)
+                continue;
+                console.log(k);
+             }
+
+             for(let Deepika in user)
+             {
+                console.log(Deepika);
+             }
+             let arr=["apple","orange","Grape","litchy"];
+             for(let fruit of arr)
+             console.log(fruit);
+        </script>
+</body>
+</html>
